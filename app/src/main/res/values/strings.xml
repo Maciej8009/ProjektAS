@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">TEST3</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="GdyniaN">Gdynia</string>
+    <string name="GdyniaD">Gdynia – miasto na prawach powiatu w północnej Polsce, w województwie
+        pomorskim, położone nad Morzem Bałtyckim, na Pobrzeżu Gdańskim i Pojezierzu
+        Wschodniopomorskim. Wchodzi w skład Trójmiasta, jest zatem jednym z miast centralnych
+        aglomeracji Trójmiasta.
+    </string>
+    <string name="GdanskN">Gdańsk</string>
+    <string name="GdanskD">Gdańsk – miasto na prawach powiatu w północnej Polsce w województwie
+        pomorskim, położone nad Morzem Bałtyckim u ujścia Motławy do Wisły nad Zatoką Gdańską,
+        największe pod względem powierzchni miasto w kraju.
+    </string>
+    <string name="SopotN">Sopot</string>
+    <string name="SopotD">Sopot – miasto na prawach powiatu w północnej Polsce nad Zatoką Gdańską,
+        położone na Pobrzeżu Gdańskim, między Gdańskiem a Gdynią, z którymi tworzy Trójmiasto,
+        w obrębie aglomeracji trójmiejskiej.
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Witaj w przewodniku po Trójmieście!</string>
+    <string name="info">Przewodnik oprowadzi Cię po miastach Trójmiasta!</string>
+    <string name="start">Zaczynajmy!</string>
+
+</resources>
