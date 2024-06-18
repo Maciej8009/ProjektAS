@@ -27,7 +27,7 @@ class DBHelper(context: Context): SQLiteOpenHelper(context, "db", null, 1)
     fun getGdynia(): MutableList<Place>{
         val placelist = mutableListOf<com.example.test3.Place>()
         val db = readableDatabase
-        val query = "SELECT name, description FROM Dane WHERE city='Gdynia'"
+        val query = "SELECT id, name, description FROM Dane WHERE city='Gdynia'"
         val cursor = db.rawQuery(query, null)
 
         while (cursor.moveToNext()){
