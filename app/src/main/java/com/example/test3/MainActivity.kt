@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
     private lateinit var db: DBHelper
-    private lateinit var placeAdapter: PlaceAdapter
+//    private lateinit var placeAdapter: PlaceAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,11 +33,11 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         db = DBHelper(this)
-        placeAdapter = PlaceAdapter(db.getGdynia(), this)
-        setContentView(R.layout.fragment_first) //TUTAJ BYŁ PROBLEM
-        val placesRecyclerView: RecyclerView= findViewById(R.id.placesRecyclerView)
-        placesRecyclerView.layoutManager=LinearLayoutManager(this)
-        placesRecyclerView.adapter = placeAdapter
+//        placeAdapter = PlaceAdapter(db.getGdynia(), this)
+//        setContentView(R.layout.fragment_first) //TUTAJ BYŁ PROBLEM
+//        val placesRecyclerView: RecyclerView= findViewById(R.id.placesRecyclerView)
+//        placesRecyclerView.layoutManager=LinearLayoutManager(this)
+//        placesRecyclerView.adapter = placeAdapter
 
 
     }

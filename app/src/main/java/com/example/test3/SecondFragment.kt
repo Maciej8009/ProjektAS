@@ -6,11 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.test3.databinding.FragmentSecondBinding
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
+private lateinit var db: DBHelperGdansk
+private lateinit var placeAdapter: PlaceAdapterGdansk
 class SecondFragment : Fragment() {
 
     private var _binding: FragmentSecondBinding? = null
@@ -37,6 +41,16 @@ class SecondFragment : Fragment() {
         }
         binding.buttonN2.setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_thirdFragment)
+        }
+        try {
+            db = DBHelperGdansk(this)
+            placeAdapter = PlaceAdapterGdansk(db.getGdansk(), this)
+//        setContentView(R.layout.fragment_first) //TUTAJ BYŁ PROBLEM
+            val placesRecyclerView: RecyclerView = binding.PlacesRecyclerView2
+            placesRecyclerView.layoutManager= LinearLayoutManager(context)
+            placesRecyclerView.adapter = placeAdapter
+        } catch (e: Exception) {
+            return
         }
     }
 
